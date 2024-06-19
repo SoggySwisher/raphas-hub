@@ -1,0 +1,259 @@
+_G.Toggles = "V" -- 
+game:GetService("StarterGui"):SetCore("SendNotification",{ 	Title = "Follow me",  	
+ 
+Text = "DevRapha;)",
+ 
+})
+ 
+    game:GetService("StarterGui"):SetCore("SendNotification",{ 	
+ 
+    Title = "Loaded!",  	
+ 
+    Text = "Have fun!",
+ 
+    })
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("RaphasHub V0.2", "GrapeTheme")
+ 
+-- Main
+local Main = Window:NewTab("Main")
+local MainScripts = Main:NewSection("Main")
+ 
+ 
+MainScripts:NewButton("Silent Aim (P) + Macro (Q)", "To enable Silent Aim press P and for Macro Press Q", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafapapolas/Idk/main/dald.lua"))()
+end)
+ 
+MainScripts:NewButton("CamLock (C)", "To enable Camlock Press (C)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafapapolas/CamLock/main/Camlock.lua"))()
+end)
+ 
+MainScripts:NewButton("Trashy AimLock (B) ", "Enable And diseable Lock by pressing (B)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafapapolas/OtherLock/main/OtherLock.lua"))()
+end)
+ 
+MainScripts:NewButton("CamLock (F) ", "Enable And diseable Lock by pressing (F)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafapapolas/CamLock/main/Camlock.lua"))()
+end)
+ 
+MainScripts:NewButton("Fake Macro (Z) ", "Enable And diseable Lock by pressing (Z)", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/fgbqPJXL"))()
+end)
+ 
+MainScripts:NewButton("Other Macro (T) ", "Enable And diseable Lock by pressing (T)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafapapolas/DhMacro/main/DHMACRO.lua"))()
+end)
+ 
+MainScripts:NewButton("CtrlTP", "TP to places with Ctrl By pressing the right key of ur mouse", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/sQDApNWX"))()
+end)
+ 
+MainScripts:NewButton("ChatLogs", "Shows the chat", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafapapolas/DahoodScripts/main/Chat%20Logs.lua"))()
+end)
+ 
+MainScripts:NewButton("AntiBag", "Anti bags", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafapapolas/DahoodScripts/main/Anti%20Bag.lua"))()
+end)
+ 
+ 
+ 
+--  
+local Player = Window:NewTab("Player")
+local PlayerScripts = Player:NewSection("Player")
+ 
+PlayerScripts:NewButton("Inf Stamina ", "Gives inf stamina", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafapapolas/DahoodScripts/main/Inf%20Stamina.lua"))()
+end)
+ 
+PlayerScripts:NewButton("Fly (X) ", "Enable And diseable Fly by pressing X)", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/sUA9m6M6"))()
+end)
+ 
+PlayerScripts:NewSlider("WalkSpeed", "Speed", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+ 
+PlayerScripts:NewSlider("JumpPower", "Jump", 350, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+ 
+PlayerScripts:NewButton("No Jump Cooldown ", "No Jump Cooldown", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafapapolas/DahoodScripts/main/No%20Jump%20Cooldown.lua"))()
+end)
+ 
+PlayerScripts:NewButton("No Slow down ", "No Jump Cooldown", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafapapolas/DahoodScripts/main/No%20Slow%20Down.lua"))()
+end)
+ 
+PlayerScripts:NewButton("Resets S/J", "Resets stuff", 350, 50, function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+ 
+-- visuals
+local Visual = Window:NewTab("Visual")
+local VisualScripts = Visual:NewSection("Fov")
+ 
+ 
+VisualScripts:NewButton("FovChanger ", "Normal FOV:100 Max:200", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafapapolas/Fov/main/FovChanger.lua"))()
+end)
+ 
+local VisualScripts = Visual:NewSection("Visual")
+ 
+VisualScripts:NewButton("ESP ", "Lets you see ppls names", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/nqyGkWvx"))()
+end)
+ 
+VisualScripts:NewButton("LowGFX ", "Normal FOV:100 Max:200", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafapapolas/DahoodScripts/main/Low%20GFX.lua"))()
+end)
+ 
+local VisualScripts = Visual:NewSection("Gun")
+ 
+VisualScripts:NewButton("Custom Weapon Color,Material", "ChangeColor", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafapapolas/DahoodScripts/main/Custom%20Weapon%20Color%2CMaterial.lua"))()
+end)
+ 
+VisualScripts:NewButton("Da Hood Legendary Gun Skin Changer", "ChangeColor", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafapapolas/DahoodScripts/main/Custom%20Weapon%20Color%2CMaterial.lua"))()
+end)
+ 
+VisualScripts:NewButton("Da Hood Legendary Gun Skin Script", "ChangeColor", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafapapolas/DahoodScripts/main/Custom%20Weapon%20Color%2CMaterial.lua"))()
+end)
+ 
+-- Animations
+local Animations = Window:NewTab("Animations")
+local AnimationPacks = Animations:NewSection("Animations")
+ 
+AnimationPacks:NewButton("GetAllAnimations ", "Gives u animation pack", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ImNotZack/Da-Hood/main/Animation%20Pack.lua"))()
+end)
+ 
+AnimationPacks:NewButton("Pro Animations", "Gives u animation pack", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafapapolas/DahoodScripts/main/Perm%20Animation.lua"))()
+end)
+ 
+AnimationPacks:NewButton("Headless And Korblox", "Gives u Headless And Korblox", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafapapolas/DahoodScripts/main/Headless%20And%20Korblox.lua"))()
+end)
+ 
+-- Teleport
+local Teleport = Window:NewTab("Teleport")
+local TeleportButtons = Teleport:NewSection("Teleport")
+ 
+ 
+TeleportButtons:NewButton("Revolver", "Teleport To Revolver", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-639, 22, -121)
+end)
+ 
+TeleportButtons:NewButton("Dual Barrel", "Teleport To Dual Barrel", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1040, 22, -258)
+end)
+ 
+TeleportButtons:NewButton("Rpg and Food", "Teleport To Rpg", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-787, -40, -933)
+end) 
+ 
+TeleportButtons:NewButton("GunStore#1", "Teleport To GunStore#1", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(471, 48, -623)
+end) 
+ 
+TeleportButtons:NewButton("GunStore#2", "Teleport To GunStore#2", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-581, 8, -725)
+end)   
+ 
+TeleportButtons:NewButton("Bank", "Teleport To Bank", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-436.293091, 22.9756889, -284.663605)
+end)
+ 
+TeleportButtons:NewButton("FoodStore", "Teleport To FoodStore", function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(299.333008, 49.2826653, -614.396179)
+end)
+ 
+TeleportButtons:NewButton("Armor Uphills", "Teleport To Uphills", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(539.091553, 50.3202744, -637.574951)
+end)
+ 
+TeleportButtons:NewButton("Giant Wheel", "Teleport To Wheel", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(156, 158, -720)
+end) 
+ 
+TeleportButtons:NewButton("Armor downhills", "Teleport To Armor downhills", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-604.207581, 10.3496914, -788.651001)
+end)
+ 
+TeleportButtons:NewButton("Bank Vault", "Teleport To Bank Vault", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-503.625549, 23.1576424, -283.936401)
+end)
+ 
+TeleportButtons:NewButton("Granades", "Teleport To Granades", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(108, -27, -275)
+end) 
+ 
+TeleportButtons:NewButton("Flame", "Teleport To Flame", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-154, 54, -101)
+end) 
+ 
+TeleportButtons:NewButton("Unjail", "Teleport To Unjail", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-271.151978, 21.75, -243.19165)
+end)
+ 
+TeleportButtons:NewButton("LMG", "Teleport To LMG", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-621, 23, -301)
+end)
+ 
+TeleportButtons:NewButton("Gym", "Teleport To Bank", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-88, 23, -632)
+end)
+ 
+TeleportButtons:NewButton("Bike", "Teleport To Bank", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-824, 22, -547)
+end)
+ 
+-- Autos
+local AutoFarms = Window:NewTab("AutoFarms")
+local AutoScripts = AutoFarms:NewSection("AutoFarms")
+ 
+AutoScripts:NewButton("AutoFarmMoney ", "Once Enabled cant be turned off", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafapapolas/AutoFarm/main/AutoFarm.lua"))()
+end)
+ 
+AutoScripts:NewButton("AutoArrest ", "Once Enabled cant be turned off", function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/Raycodex/Exploiting/main/Roblox/Da%20Hood%20Auto%20Arrest"), true))()
+end)
+ 
+AutoScripts:NewButton("AutoFarmLettuce ", "Be skinny", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafapapolas/AutoLettuceFarmStart/main/AutoLettuceFarmStart.lua"))()
+end)
+ 
+AutoScripts:NewButton("StopLettuceFarm ", "Be skinny", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafapapolas/AutoLettuceFarmStop/main/AutoLettuceFarmStop.lua"))()
+end)
+ 
+-- MoneyStuff
+local Money = Window:NewTab("Money")
+local MoneyStuff = Money:NewSection("Money")
+ 
+ 
+MoneyStuff:NewButton("Money Dupe Method ", "Dupe Cash", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafapapolas/DahoodScripts/main/Dupe%20Cash%20Method.lua"))()
+end)
+ 
+ 
+-- Others
+local Other = Window:NewTab("Other")
+local OtherScripts = Other:NewSection("Other")
+ 
+OtherScripts:NewButton("Trash Talk (H) ", "Auto Talk Trash", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafapapolas/TrashTalk/main/Talk.lua"))()
+end)
+ 
+OtherScripts:NewButton("Ping Tracker", "Tracks Ping", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafapapolas/DahoodScripts/main/Ping%20Tracker.lua"))()
+end)
+ 
+OtherScripts:NewButton("Free Limiteds", "Tracks Ping", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafapapolas/DahoodScripts/main/VisualWorks%20Old%20Source.lua"))()
+end)
